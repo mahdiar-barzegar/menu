@@ -1,0 +1,62 @@
+body{
+    font-family: Poppins;
+    background-color: rgba(65, 64, 64, 0.412);
+}
+.All{
+    width: 400px; 
+    height: 500px; 
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    padding: 200pxpx;
+}
+.title{
+    background-color: #1565C0;
+    width: 120px;
+    padding: 4px;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    color: azure;
+    transition:all 0.2s ease-in 1s ;
+    
+}
+.hover{
+    background-color: aliceblue;
+    width: 110px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 2px;
+    display: none;
+    cursor: pointer;
+    transition:all 0.2s ease-in 1s;
+
+}
+.imagee{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-bottom: -4px;
+    transition: 0.2s;
+    
+}
+.title:hover + .hover{
+    display: block;
+    
+    
+}
+.title:hover{
+    cursor: pointer;
+    background-color: #1E88E5;
+    
+}
+.title:hover .imagee{
+    transform: rotate(180deg);
+    
+}
